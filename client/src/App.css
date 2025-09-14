@@ -1,0 +1,130 @@
+/* estilos globales para la pagina (el body) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6e6fa; 
+    color: #4b0082; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('./imagen2.jpg'); /* aqui esta una imagen de fondo de mi gusto */
+    background-size: cover; /* la imagen cubre todo el fondo */
+    background-attachment: fixed; /* la imagen no se mueve al hacer scroll */
+    background-position: center; /* centra la imagen de fondo */
+}
+
+/* estilo para el contenedor principal de la aplicacion */
+.App {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    
+}
+
+/* estilos de los titulos principales */
+h1 {
+    text-align: center;
+    color: #ff69b4; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4b0082; 
+    border-bottom: 2px solid #ffb6c1; 
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* estilos para todos los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.7); 
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4b0082;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+/* estilos de los botones */
+button {
+    padding: 12px 20px;
+    background-color: #ff69b4; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* aqui una transicion suave al pasar el mouse */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff1493; /* aqui un color rosa mas oscuro al pasar el mouse */
+}
+
+/* estilos para las listas no ordenadas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f8ff; 
+    border: 1px solid #e0e0f0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* contenedor de los botones de accion (editar, eliminar) */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* media query para hacer el diseño responsivo en pantallas pequeñas (moviles) */
+@media (max-width: 600px) {
+    .App {
+        margin: 20px;
+        padding: 15px;
+    }
+    form {
+        padding: 15px;
+    }
+    li {
+        flex-direction: column; /* aqui apila los elementos en columnas */
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
